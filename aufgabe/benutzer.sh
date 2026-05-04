@@ -14,6 +14,8 @@
 
 # ☐ Wenn mindestens 5 Fehler vorhanden sind und der Benutzer sein Passwort kennt, gib aus: Konto möglicherweise gesperrt. Entsperrung prüfen. 
 
+
+
 # ☐ Wenn mindestens 5 Fehler vorhanden sind und der Benutzer sein Passwort nicht kennt, gib aus: Passwort zurücksetzen und Konto prüfen. 
 
 # ☐ Wenn weniger als 5 Fehler vorhanden sind, gib aus: Benutzer soll die Anmeldung erneut testen. 
