@@ -1,0 +1,6 @@
+Systemcheck Bericht
+web01 online
+db01 2
+backup01 online
+mail01 wartung
+proxy01 online

@@ -1,19 +1,14 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Aufgabe 5: Mini Helpdesk Liste
+# Tickets speichern
+tickets=("Passwort vergessen" "Drucker kaputt" "VPN geht nicht")
 
-# Erstellt ein Array mit drei Tickettexten.
-tickets=("Passwort vergessen" "Drucker geht nicht" "VPN funktioniert nicht")
-
-# Erstellt eine Nummerierung, die bei 1 startet.
+# Nummer starten
 nummer=1
 
-# Startet eine for-Schleife für jedes Ticket im Array.
+# Alle Tickets anzeigen
 for ticket in "${tickets[@]}"
 do
-    # Gibt das aktuelle Ticket mit der sichtbaren Nummer aus.
-    echo "$nummer) $ticket"
-
-    # Erhöht die Nummer nach jeder Ausgabe um 1.
+    echo "$nummer. $ticket"
     nummer=$((nummer + 1))
 done

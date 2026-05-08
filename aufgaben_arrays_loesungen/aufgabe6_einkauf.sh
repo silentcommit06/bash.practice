@@ -1,19 +1,17 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Aufgabe 6: Benutzereingabe und Array
-
-# Legt ein leeres Array für die Einkaufsliste an.
+# Leere Einkaufsliste
 einkaufsliste=()
 
-# Startet eine Schleife mit den Produktnummern 1, 2 und 3.
+# 3 Produkte eingeben
 for nummer in 1 2 3
 do
-    # Fragt den Benutzer nach einem Produkt und speichert die Eingabe in produkt.
-    read -p "Bitte Produkt $nummer eingeben: " produkt
+    echo "Produkt $nummer eingeben:"
+    read produkt
 
-    # Fügt das eingegebene Produkt zum Array hinzu.
     einkaufsliste+=("$produkt")
 done
 
-# Gibt die komplette Einkaufsliste aus.
-echo "Einkaufsliste: ${einkaufsliste[@]}"
+# Liste anzeigen
+echo "Deine Einkaufsliste:"
+echo "${einkaufsliste[@]}"

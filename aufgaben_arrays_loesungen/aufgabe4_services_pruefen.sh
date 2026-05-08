@@ -11,5 +11,5 @@ do
     # Gibt den aktuellen Dienst aus.
     echo "Prüfe Dienst: $service"
 
-    # Optionaler Hinweis: systemctl status "$service" könnte den Dienststatus anzeigen.
+    #  systemctl status "$service" könnte den Dienststatus anzeigen.
 done

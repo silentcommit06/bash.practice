@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Aufgabe 3: Werte hinzufügen
 
 # Erstellt ein Array mit drei Benutzern.
 users=(ali sara mehmet)
