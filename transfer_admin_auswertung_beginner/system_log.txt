@@ -1,0 +1,12 @@
+2026-05-11 08:10 INFO user=emre action=login host=client01
+2026-05-11 08:12 INFO user=sara action=login host=client02
+2026-05-11 08:15 WARNING user=tom action=wrong_password host=client03
+2026-05-11 08:18 ERROR user=tom action=login_failed host=client03
+2026-05-11 08:22 INFO user=emre action=file_open host=client01
+2026-05-11 08:30 WARNING user=alex action=wrong_password host=client04
+2026-05-11 08:35 ERROR user=alex action=login_failed host=client04
+2026-05-11 08:40 INFO user=sara action=logout host=client02
+2026-05-11 09:05 INFO user=emre action=login host=client01
+2026-05-11 09:10 ERROR user=unknown action=login_failed host=client99
+2026-05-11 09:15 WARNING user=tom action=wrong_password host=client03
+2026-05-11 09:20 INFO user=alex action=login host=client04

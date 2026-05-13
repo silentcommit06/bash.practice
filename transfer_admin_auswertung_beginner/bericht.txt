@@ -1,0 +1,68 @@
+Admin Bericht
+=============
+
+Dateipruefung:
+system_log.txt ist vorhanden.
+users.txt ist vorhanden.
+tickets.txt ist vorhanden.
+
+Log-Auswertung:
+ERROR-Zeilen:
+2026-05-11 08:18 ERROR user=tom action=login_failed host=client03
+2026-05-11 08:35 ERROR user=alex action=login_failed host=client04
+2026-05-11 09:10 ERROR user=unknown action=login_failed host=client99
+
+WARNING-Zeilen:
+2026-05-11 08:15 WARNING user=tom action=wrong_password host=client03
+2026-05-11 08:30 WARNING user=alex action=wrong_password host=client04
+2026-05-11 09:15 WARNING user=tom action=wrong_password host=client03
+
+Anzahl ERROR:
+3
+Anzahl WARNING:
+3
+
+Benutzer-Auswertung:
+Alle Benutzernamen:
+emre
+sara
+tom
+alex
+maria
+
+Benutzer mit Rolle:
+emre - admin
+sara - support
+tom - support
+alex - devops
+maria - hr
+
+Benutzer, die nicht active sind:
+tom - locked
+maria - inactive
+
+Ticket-Auswertung:
+Alle offenen Tickets:
+1001;hoch;offen;Login funktioniert nicht;tom
+1003;hoch;offen;VPN Verbindung bricht ab;alex
+1004;niedrig;offen;Passwort ändern;maria
+1006;mittel;offen;Softwareinstallation fehlt;sara
+1007;hoch;offen;Mehrere Login Fehler;tom
+
+Alle Tickets mit Prioritaet hoch:
+1001;hoch;offen;Login funktioniert nicht;tom
+1003;hoch;offen;VPN Verbindung bricht ab;alex
+1005;hoch;geschlossen;Server nicht erreichbar;emre
+1007;hoch;offen;Mehrere Login Fehler;tom
+
+Offene Tickets mit Nummer und Benutzer:
+1001 - tom
+1003 - alex
+1004 - maria
+1006 - sara
+1007 - tom
+
+Einschaetzung:
+Warnung: Es gibt ERROR-Zeilen im Log.
+Warnung: Es gibt offene Tickets mit hoher Prioritaet.
+Hinweis: Gesperrte oder inaktive Benutzer sollten geprueft werden.

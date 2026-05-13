@@ -1,0 +1,8 @@
+1001;hoch;offen;Login funktioniert nicht;tom
+1002;mittel;geschlossen;Druckerproblem;sara
+1003;hoch;offen;VPN Verbindung bricht ab;alex
+1004;niedrig;offen;Passwort ändern;maria
+1005;hoch;geschlossen;Server nicht erreichbar;emre
+1006;mittel;offen;Softwareinstallation fehlt;sara
+1007;hoch;offen;Mehrere Login Fehler;tom
+1008;niedrig;geschlossen;Monitor defekt;maria
