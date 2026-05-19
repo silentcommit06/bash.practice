@@ -1,0 +1,28 @@
+# This file shows different YAML data types.
+
+# This is a normal text value.
+name: Emre
+
+# This is also text.
+stadt: Ruesselsheim
+
+# Quotes are useful when the text contains spaces.
+rolle: "DevOps Trainer"
+
+# Numbers are written without quotes.
+port: 8080
+
+# A version is often written as text.
+version: "3.8"
+
+# true means enabled or yes.
+aktiv: true
+
+# false means disabled or no.
+debug: false
+
+# null means there is no value.
+beschreibung: null
+
+# This value is also empty.
+notiz:

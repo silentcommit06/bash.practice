@@ -1,0 +1,10 @@
+# This file shows indentation in YAML.
+# The keys name and port belong to server because they are indented.
+
+# Main section for the server.
+server:
+  # Name of the server.
+  name: webserver-01
+
+  # Port of the server.
+  port: 8080

@@ -1,0 +1,13 @@
+# This file shows a list where every item has more than one property.
+
+# Main list of people.
+personen:
+  # First person in the list.
+  - name: Max
+    # Role of the first person.
+    rolle: Teilnehmer
+
+  # Second person in the list.
+  - name: Sarah
+    # Role of the second person.
+    rolle: Dozentin

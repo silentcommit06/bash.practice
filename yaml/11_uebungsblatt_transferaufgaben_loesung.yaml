@@ -1,0 +1,186 @@
+# Solution file for Uebungsblatt YAML Transferaufgaben.
+# This file contains the YAML parts for the exercises.
+
+# Aufgabe 1: YAML lesen und erklaeren
+# This is the given course example, written with English comments.
+aufgabe_1_kurs:
+  # Course name.
+  name: IT-Support Grundlagen
+
+  # Course duration in weeks.
+  dauer_wochen: 6
+
+  # true means the course is online.
+  online: true
+
+  # List of course topics.
+  themen:
+    # First topic.
+    - Windows Grundlagen
+
+    # Second topic.
+    - Linux Grundlagen
+
+    # Third topic.
+    - Netzwerke
+
+  # Nested area for teacher information.
+  dozent:
+    # Teacher name.
+    name: Herr Mueller
+
+    # Time is written as text because 17:00 could be interpreted in a special way.
+    verfuegbar_bis: "17:00"
+
+# Aufgabe 2: Schluessel, Werte und Datentypen erkennen
+# This area stores the example values and comments explain their data types.
+aufgabe_2_datentypen:
+  # Text/string value.
+  name: Webserver
+
+  # Number/integer value.
+  port: 8080
+
+  # Boolean value, false means no or disabled.
+  aktiv: false
+
+  # Text/string value because the version is written in quotes.
+  version: "3.8"
+
+  # List value with two tools.
+  tools:
+    - Docker
+    - Git
+
+  # Number/integer value.
+  speicher_gb: 4
+
+# Aufgabe 3: Fehlerhafte YAML-Datei korrigieren
+# This is the corrected server documentation.
+aufgabe_3_server:
+  # Server name belongs to the server area.
+  name: webserver-01
+
+  # IP address of the server.
+  ip: 192.168.1.20
+
+  # List of open ports.
+  ports:
+    - 80
+    - 443
+
+  # true means the server is active.
+  aktiv: true
+
+  # Description of the server.
+  beschreibung: Das ist ein Testserver
+
+# Aufgabe 4: Sachverhalt in YAML umwandeln
+# This YAML describes one workplace/client.
+aufgabe_4_arbeitsplatz:
+  # Name of the workplace.
+  name: client-raum-101
+
+  # Operating system installed on the client.
+  betriebssystem: Windows 11 Pro
+
+  # User information.
+  benutzer:
+    # Full name of the user.
+    name: Max Becker
+
+    # false means the user is not an administrator.
+    administrator: false
+
+  # List of installed programs.
+  programme:
+    - Google Chrome
+    - Microsoft Teams
+    - Visual Studio Code
+
+  # Network configuration.
+  netzwerk:
+    # IP address of the client.
+    ip: 192.168.10.25
+
+    # Gateway address.
+    gateway: 192.168.10.1
+
+    # List of DNS servers.
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+
+  # true means backup is enabled.
+  backup_aktiv: true
+
+  # Extra comment about this device.
+  kommentar: Geraet wird im Schulungsraum eingesetzt.
+
+# Aufgabe 5: Helpdesk-Tickets als YAML modellieren
+# This list contains three helpdesk ticket templates.
+aufgabe_5_ticket_vorlagen:
+  # First ticket template.
+  - name: Passwort zuruecksetzen
+    prioritaet: niedrig
+    kategorie: Benutzerkonto
+    standardantwort: Ihr Passwort wurde zurueckgesetzt. Bitte melden Sie sich erneut an.
+
+  # Second ticket template.
+  - name: Drucker funktioniert nicht
+    prioritaet: mittel
+    kategorie: Hardware
+    standardantwort: Bitte pruefen Sie zuerst Papier, Toner und Netzwerkverbindung.
+
+  # Third ticket template.
+  - name: Kein Zugriff auf Teams
+    prioritaet: hoch
+    kategorie: Microsoft 365
+    standardantwort: Wir pruefen Ihre Lizenz und Ihre Gruppenmitgliedschaften.
+
+# Aufgabe 6: Docker-Compose-Kontext verstehen
+# This is the given Docker Compose-like structure.
+aufgabe_6_compose_beispiel:
+  # services is the top-level area.
+  services:
+    # web is the service name.
+    web:
+      # nginx is the container image.
+      image: nginx
+
+      # Port mapping from host port 8080 to container port 80.
+      ports:
+        - "8080:80"
+
+      # always means Docker should restart the container automatically.
+      restart: always
+
+# Aufgabe 7: Eigene kleine Compose-nahe YAML-Datei
+# This YAML describes two services: a web server and an app.
+aufgabe_7_services:
+  # All services are stored under services.
+  services:
+    # This service is the web server.
+    webserver:
+      # nginx is used as the web server image.
+      image: nginx
+
+      # Port mapping from host port 8080 to container port 80.
+      ports:
+        - "8080:80"
+
+      # Restart the service unless it was stopped manually.
+      restart: unless-stopped
+
+    # This service is the Python app.
+    app:
+      # Python 3.12 is used as the app image.
+      image: python:3.12
+
+      # Port mapping from host port 5000 to container port 5000.
+      ports:
+        - "5000:5000"
+
+      # Restart the service unless it was stopped manually.
+      restart: unless-stopped
+

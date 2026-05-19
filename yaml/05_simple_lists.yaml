@@ -1,0 +1,24 @@
+# This file shows simple YAML lists.
+# Every list item starts with a dash.
+
+# A list of tools.
+tools:
+  # First tool.
+  - Docker
+
+  # Second tool.
+  - Kubernetes
+
+  # Third tool.
+  - Jenkins
+
+# A list of port numbers.
+ports:
+  # HTTP port.
+  - 80
+
+  # HTTPS port.
+  - 443
+
+  # Application port.
+  - 8080

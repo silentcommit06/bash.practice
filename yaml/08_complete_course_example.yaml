@@ -1,0 +1,34 @@
+# This file is the complete YAML example from the explanation sheet.
+
+# Main section for the course.
+kurs:
+  # Name of the course.
+  name: SysadminGrundlagen
+
+  # Duration of the course.
+  dauer: 6 Monate
+
+  # true means the course is active.
+  aktiv: true
+
+# List of participants.
+teilnehmer:
+  # First participant.
+  - Max
+
+  # Second participant.
+  - Sarah
+
+  # Third participant.
+  - Julia
+
+# List of tools used in the course.
+tools:
+  # First tool.
+  - Linux
+
+  # Second tool.
+  - Docker
+
+  # Third tool.
+  - Git

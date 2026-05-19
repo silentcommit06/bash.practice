@@ -1,0 +1,9 @@
+#Yaml is a Data Serialization Language line JSON but more human readable and easier to write
+#Yaml is used for configuration files and data exchange between languages with different data structures
+#Yaml uses indentation to indicate nesting and is case sensitive
+#Yaml supports multiple data types including strings, numbers, booleans, lists, and dictionaries
+#Yaml files typically have the .yaml or .yml extension
+#Example of a yaml file
+#Yaml use Cases include: kubernetes configuration files, Ansible playbooks, and Docker Compose files
+
+micr

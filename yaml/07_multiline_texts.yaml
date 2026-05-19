@@ -1,0 +1,13 @@
+# This file shows two ways to write longer text in YAML.
+
+# The pipe keeps line breaks visible.
+beschreibung_mit_zeilenumbruechen: |
+  This is a longer text.
+  This text keeps its line breaks.
+  Every line stays visible.
+
+# The greater-than sign folds the text into one paragraph.
+beschreibung_als_absatz: >
+  This is a longer text,
+  but it will be read more like
+  one connected paragraph.

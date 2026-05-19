@@ -1,0 +1,20 @@
+# This file shows why YAML is important for Docker Compose.
+# Docker Compose uses YAML to describe containers and their settings.
+
+# Compose file format version.
+version: "3.8"
+
+# services contains the containers that should be started.
+services:
+  # Name of the service.
+  web:
+    # Docker image used for this container.
+    image: nginx
+
+    # Container name shown by Docker.
+    container_name: beginner_webserver
+
+    # Port mapping from host to container.
+    ports:
+      # Host port 8080 is connected to container port 80.
+      - "8080:80"

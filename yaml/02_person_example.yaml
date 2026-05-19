@@ -1,0 +1,11 @@
+# This file shows basic information about one person.
+# Every line uses the format key: value.
+
+# The person's name.
+name: Max
+
+# The person's city.
+stadt: Frankfurt
+
+# The person's job.
+beruf: Administrator

@@ -1,0 +1,23 @@
+# Aufgabe solution: simple Docker Compose file for a web server.
+# This is beginner-friendly and uses only a few important settings.
+
+# Docker Compose version.
+version: "3.8"
+
+# All containers are listed under services.
+services:
+  # The web service runs an nginx container.
+  webserver:
+    # nginx is the image for a simple web server.
+    image: nginx
+
+    # This name makes the container easier to recognize.
+    container_name: aufgabe_webserver
+
+    # Ports connect the computer with the container.
+    ports:
+      # Open localhost:8080 to reach nginx port 80.
+      - "8080:80"
+
+    # restart tells Docker what to do if the container stops.
+    restart: unless-stopped
